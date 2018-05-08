@@ -11,7 +11,7 @@ class CameraLED():
     SET_TAG = 0x38041
     GET_TAG = 0x30041
 
-    def __init__(self, led=134):
+    def __init__(self, led=13):
         self.__vcio = os.open("/dev/vcio", os.O_TRUNC)
         self.__led = led
     
